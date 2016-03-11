@@ -1,0 +1,36 @@
+Magic 8 Ball First Try
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace magicEightBall
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Would you like to ask the Magic 8 Ball a question? Please enter Y or N.");
+            char answer = Convert.ToChar(Console.ReadLine());
+
+            if (answer == 'Y' || answer == 'y')
+            { 
+                Console.WriteLine("Ask any question you like!");
+                string quest = Console.ReadLine();
+
+                string[] responses = { "Not likely!", "Nope!", "Outlook Good!", "Heck Yes!" };
+                var max = responses.Length;
+                Random rnd = new Random();
+                var selNum = rnd.Next(max);
+
+                Console.WriteLine(responses[selNum]);
+            }
+            else
+            {
+                Console.WriteLine("Maybe next time!");
+            }
+        }
+    }   
+}
