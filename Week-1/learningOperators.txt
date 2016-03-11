@@ -1,0 +1,36 @@
+Learning Operators
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace operators
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int x = 1;
+            //Console.WriteLine(x++);
+
+            bool lightSwitch = true;
+            bool lamp = true;
+            Console.WriteLine(lightSwitch && lamp);
+            Console.WriteLine(!lightSwitch);
+            Console.WriteLine(lightSwitch || lamp);
+
+            //Modulus in double operator example
+            
+	    /*int x = 1;
+            x %= 3;
+            Console.WriteLine(x);*/
+
+            //Cool example: true ? x : y;
+
+
+
+        }
+    }
+}

@@ -1,0 +1,38 @@
+Can You Ride The Coaster Conditional
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace rollerCoaster
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //You are allowed to ride a roller coaster if you are at least 18 AND you are 5.0 feet tall or taller. Ask the user questions and then tell them if they can ride or not.
+            //Ask for age
+            //Ask for height
+            //Convert age to int and convert height to double or float
+            //Check the input to see if it meets the conditions
+            //Print response, You can ride or else you cannot ride
+
+            Console.WriteLine("What is your age?");
+            int age = int.Parse(Console.ReadLine());
+            Console.WriteLine("What is your height in feet?");
+            double height = double.Parse(Console.ReadLine());
+
+            if(age >= 18 && height >= 5.0)
+            {
+                Console.WriteLine("You may ride this ride!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, you do not meet the conditions to ride this ride!");
+            }
+           
+        }
+    }
+}

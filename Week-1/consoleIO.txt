@@ -1,0 +1,40 @@
+Learning Input/Output Console IO
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace consoleIO
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Write a program that ask's user's info and saves input.
+
+            /*Console.WriteLine("Hello! I need to get your information! What is your first name?");
+            string firstName = Console.ReadLine();
+
+            Console.WriteLine("Great! Now, what is your last name?");
+            string lastName = Console.ReadLine();
+
+            Console.WriteLine("Thank you" + firstName + " " + lastName + "! " + "Now what is your gender?");
+            string gender = Console.ReadLine();
+
+            Console.WriteLine("Awesome! Now, how old are you?");
+            int age = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Okay so you are," + age + ". Thank you for sharing your information!");*/
+
+            Console.Write("What is your name? ");
+            string s = Console.ReadLine();
+
+            Console.Write("Great! Now, how old are you? ");
+            int s1 = int.Parse(Console.ReadLine());
+            Console.Write("Thank you " + s + " You are " + s1 + " years old!");
+
+        }
+    }
+}

@@ -1,0 +1,30 @@
+Even Odd
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace evenOdd1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Write a program which checks if an input number is odd or even. Print “1” if it’s an even number. Print “0” if it’s an odd number.
+
+            Console.WriteLine("Enter a number and let's check to see if it's even or odd. If it prints 1, your number is even. If it prints 0, your number is odd.");
+            int num = int.Parse(Console.ReadLine());
+
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("1");
+            }
+            else
+            {
+                Console.WriteLine("0");
+            }
+        }
+    }
+}

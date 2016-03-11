@@ -1,0 +1,42 @@
+Biggest Of Three Ints
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace biggestOfThreeInts
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter 3 numbers and let the program find the larger of the 3. Enter your first number now.");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter your second number now.");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter your third number now.");
+            int c = int.Parse(Console.ReadLine());
+
+            if (a > b && a > c)
+            {
+                Console.WriteLine(a);
+            }
+            else if (b > a && b > c)
+            {
+                Console.WriteLine(b);
+            }
+            else if (c > a && c > b)
+                {
+                    Console.WriteLine(c);
+                }
+            else
+            {
+                Console.WriteLine("Error!");
+            }
+               
+       }
+   }
+} 
+

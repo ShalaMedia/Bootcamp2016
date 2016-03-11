@@ -1,0 +1,30 @@
+Conditional Practice 3
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace conditional3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Write a program that asks a user his or her name. If the name begins with an “A” tell them to go to the front of the line.
+
+            Console.WriteLine("What is your name?");
+            string userName = Console.ReadLine();
+            
+            if(userName[0] == 'A')
+            {
+                Console.WriteLine("Please go to the front!");
+            }
+            else
+            {
+                Console.WriteLine("Go home!");
+            }
+        }
+    }
+}

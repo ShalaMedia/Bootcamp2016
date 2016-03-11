@@ -1,0 +1,27 @@
+Conditional Practice
+
+using System;
+
+namespace conditionalsPractice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter two numbers to see if the first one is greater. Enter your first number.");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your next number.");
+            int y = int.Parse(Console.ReadLine());
+
+            if (x > y)
+            {
+                Console.WriteLine("{0} is greater than {1}", x, y); 
+            }
+            else
+            {
+                Console.WriteLine("Sorry {0} is not greater than {1}",x,y);
+            }
+
+        }
+    }
+}
