@@ -1,0 +1,91 @@
+Self Assesment Assignment 1
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace selfAssesment1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1.Create a program that asks the user to enter an integer. If the integer is less than 10, print the message 
+            //"This number is too small". If the integer is greater than or equal to 10, print "This number is big enough".
+            Console.WriteLine("   Welcome! Answer question 1 to view the answers for my \n   Self Assesment Assignment. Enjoy! \a");
+            Console.WriteLine("\n1. Please enter a number to see if it is too big or too small. \n   It will unlock the answers to questions 2 and 3! \n   Then, enter one more number to reveal answer 4! \n");
+            int num = int.Parse(Console.ReadLine());
+            
+
+            if(num < 10)
+            {
+                Console.Write("   This number is too small. \n");
+            }
+            else if(num >=10)
+            {
+                Console.Write("   This number is big enough. \n");
+            }
+
+
+
+            //2.Create a program that creates an array of five hard-coded floating-point values, then prints out just the second value. 
+
+            float[] arr = new float[5];
+
+            arr[0] = 1.0f;
+            arr[1] = 1.5f;
+            arr[2] = 2.0f;
+            arr[3] = 2.5f;
+            arr[4] = 3.0f;
+
+            float second = arr[1];
+            Console.WriteLine("\n2. The second value in the array is " + second + ". \n ");
+
+
+
+            //3. Modify the above program so that it uses a foreach loop to display all the values in the array, all on one line.
+
+            float[] arr1 = new float[5];
+
+            arr1[0] = 1.0f;
+            arr1[1] = 1.5f;
+            arr1[2] = 2.0f;
+            arr1[3] = 2.5f;
+            arr1[4] = 3.0f;
+            Console.Write("3. The values in the array are: ");
+            foreach (float value in arr1)
+            {
+               
+                Console.Write("{0}, ", value);
+            }
+
+
+
+            /*4. Write a program that asks the user to enter an integer. If the user enters '1', print "Only one?". 
+            If the user enters '100', print "100? That's a lot!". If the user enters something other than these two numbers, 
+            print "Input not recognized.".  The program should use a switch statement.*/
+
+            Console.WriteLine("\n \n4. Please enter the final number to see answer 4 and press enter. \n ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            switch(num1)
+            {
+                case 1:
+                    Console.WriteLine("   Only one? \n   Thank you for playing! \n");
+                    break;
+                case 100:
+                    Console.WriteLine("   100? That's a lot! \n   Thank you for playing! \n");
+                    break;
+
+                default:
+                    bool error = num1 < 1 && num1 >= 2 && num1 <= 99 && num1 > 100;
+                    Console.WriteLine("   Input not recognized! \n   Thank you for playing! \n");
+                    break;
+
+            }
+
+        }
+    }
+}
