@@ -1,0 +1,41 @@
+Splitting String by Char
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace splittingStringByChar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           /*string myStr = "We, Can, {Code}, IT";
+             char[] separators = new char[] {',',' '};
+             string[] splitString =
+             myStr.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+
+           //RemoveEmptyEntries removes the additional array items ‘ ‘ caused by the comma and the space delimiters being next to each other in the source string.
+
+             foreach (string item in splitString)
+             {
+                 Console.WriteLine(item);
+             }
+           //try it without StringSplitOptions.RemoveEmptyEntries to compare.*/
+
+            string myStr = "We, Can, {Code}, IT";
+            char[] separators = new char[] { ',' ,' ' };
+            string[] splitString = myStr.Split(separators);
+
+          //RemoveEmptyEntries removes the additional array items ‘ ‘ caused by the comma and the space delimiters being next to each other in the source string.*/
+
+            foreach (string item in splitString)
+            {
+                Console.WriteLine(item);
+            }
+        
+        }
+    }
+}
