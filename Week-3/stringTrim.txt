@@ -1,0 +1,44 @@
+Trimming a String & Changing Data Types To String
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace stringTrim
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*string fileData = "  111 $  %  David % Allen ### s   ";
+
+            char[] trimChars =
+            new char[] { ' ', '1', '$', '%', '#', 's' };
+
+            string reduced = fileData.Trim(trimChars);
+
+            // reduced = "David Allen"
+            Console.WriteLine(reduced);*/
+
+	    
+
+	    //ToString();
+
+	    /*Console.WriteLine(9.ToString());
+            double pi = 3.14;
+            Console.WriteLine(pi.ToString());
+            bool ownsCar = true;
+            Console.WriteLine(ownsCar.ToString());
+            DateTime today = DateTime.Now;
+            Console.WriteLine(today.ToString());*/
+
+	    
+	    //dataType.Parse
+
+	    
+
+        }
+    }
+}

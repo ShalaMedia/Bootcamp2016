@@ -1,0 +1,33 @@
+Get Possible Combinations for Time Capsule Wardrobe
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace createYourOwnMethod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Get possible different clothing combination method
+            Console.WriteLine("Let's build your time capsule wardrobe!\n \nYou will enter an amount for 3 different kinds of clothing items.\n\nEnter your first amount of clothing items now.");
+            int firstItem = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many of the second items do you have?");
+            int secItem = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many of the third items do you have?");
+            int thirdItem = int.Parse(Console.ReadLine());
+            int totalItems = GetPossibleCombinations(firstItem, secItem, thirdItem);
+            Console.WriteLine("You have " + totalItems + " possible wardrobe combinations!\n");
+
+
+        }
+
+        static int GetPossibleCombinations(int firstItem, int secItem, int thirdItem)
+        {
+            return firstItem* secItem *thirdItem;
+        }
+    }
+}
