@@ -1,0 +1,194 @@
+Deb
+
+
+Conversation opened. 1 unread message.
+
+
+Skip to content
+Using Gmail with screen readers
+Shalamar
+1
+Search
+
+
+
+Gmail
+COMPOSE
+Labels
+Inbox (76)
+Starred
+Important
+Sent Mail
+Drafts (39)
+Circles
+1 & 1 Website info
+Abobe Billing
+Banking (1)
+Barkley Pet Resort
+Beach Body
+Brandy Bright
+Brothers
+Cleats
+Cleveland FootGolf (1)
+Codecademy (1)
+Convos
+Cory TB & RL
+EB Fitness
+Erie Shore CrossFit
+Give Forward (1)
+GoDaddy
+JDB
+Junk E-mail
+Keith Broadcasting
+Launch your Blog Tutorials (17)
+MAC JOBS
+Mashable Favorites (1)
+Microsoft
+Moldy Bean Dip
+Mrs. Gandolf
+Music
+New Account Info (1)
+Nordy's
+Notes
+Ohio Business Central
+One Website ICODOF (1)
+Pics
+Pixlr
+PromoKeeps (4)
+Salon Rootz
+Self
+Social Vidz
+Square
+Student Loan
+Style Seat (1)
+Tech Jobs
+Trust CPA
+Unwanted
+VANITYLAB
+Virteom
+WCCIhangout
+We Can Code IT (5)
+Wild Daughters (1)
+Wix (3)
+YL (2)
+More 
+Hangouts
+
+ 
+ 
+ 
+  More 
+1 of 732  
+ 
+Print all In new window
+(no subject)
+Inbox
+x 
+
+debno67@cox.net
+Attachments11:41 PM (2 minutes ago)
+
+to me 
+Attachments area
+Preview attachment appliedLearningAssessment.txt
+
+Text
+appliedLearningAssessment.txt
+	
+Click here to Reply or Forward
+4.12 GB (4%) of 100 GB used
+Manage
+Terms - Privacy
+Last account activity: 0 minutes ago
+Details
+debno67
+Add to circles
+
+Show details
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace appliedLearningAssessment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // PROBLEM 1:
+
+            //Console.Writeline("Please enter a number:");
+            //int num = int.Parse(Console.Readline());
+
+            //if (num < 10)
+            //{
+            //    Console.Writeline("This number is too small!");
+            //}
+
+            //else if (num >= 10)
+            //{
+            //    Console.Writeline("This number is big enough.");
+
+            //PROBLEM 2:
+
+            //float[] myNums = new float[5];
+
+            //myNums[0] = 1.0f;
+            //myNums[1] = 2.2f;
+            //myNums[2] = 3.5f;
+            //myNums[3] = 4.2f;
+            //myNums[4] = 5.8f;
+
+            //Console.WriteLine(myNums[1]);
+
+            //PROBLEM 3:
+
+            //float[] myNums = new float[5];
+
+            //myNums[0] = 1.0f;
+            //myNums[1] = 2.2f;
+            //myNums[2] = 3.5f;
+            //myNums[3] = 4.2f;
+            //myNums[4] = 5.8f;
+
+            //foreach (float m in myNums)
+            //{
+            //    Console.Write(m + "," + " ");
+            //}
+
+
+            //PROBLEM 4:
+            
+            Console.WriteLine("Enter a number");
+            int i = int.Parse(Console.ReadLine());
+            
+
+            switch (i)
+            {
+                case 1:
+
+                    Console.WriteLine("Only one?");
+                    break;
+
+                case 100:
+
+                    Console.WriteLine("100?  That's a lot!");
+                    break;
+
+                default:
+
+                    Console.WriteLine("Input not recognized.");
+                    break;
+            }
+                 
+        }
+    }
+}
+appliedLearningAssessment.txt
+Open with
+Displaying appliedLearningAssessment.txt.
