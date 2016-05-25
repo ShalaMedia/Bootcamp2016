@@ -1,0 +1,11 @@
+Technology and Security
+
+Recently in the news I saw the huge ordeal between the government and Apple concerning the security of people and their 
+beloved devices. Apple wasn’t willing to create a entry for the government to access locked data in a device owned by 
+an individual. Some praised Apple for sticking to their guns while others felt they should just let ‘em on in. 
+
+After much thought, I found my position on the topic. I feel that there should be a way to access data from an individual's 
+device if there is a life or death need for the information. We are smart people so I know we can build the technology 
+that meets in the middle. I know people freak out about their privacy but if you’re on the up and up, what’s the big deal? 
+If you’re not on the upside of things, maybe you shouldn’t use a phone to store your data. 
+Problem solved.

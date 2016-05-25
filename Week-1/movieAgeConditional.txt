@@ -1,0 +1,43 @@
+Get Into The Movie Conditional
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace rMovie
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //You want to admit only those 17 and older to an “R” movie. Tell those 17 and over, 
+            //“Come on in!” If they are less than 17 years old, tell them, “You can’t be admitted.” If they are 65 or older, say, “You get a discount.” 
+
+            Console.WriteLine("Welcome to the Cinematique! What is your age?");
+            int userAge = int.Parse(Console.ReadLine());
+
+            
+                if (userAge < 17)
+
+                {
+                    Console.WriteLine("You are too young to enter this movie!");
+                }
+
+                else
+                {
+                    if(userAge >= 65)
+                    {
+                        Console.WriteLine("You get a discount today! Enjoy the show!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Enjoy the show!");
+                    }
+                }
+             
+            
+        }
+    }
+}

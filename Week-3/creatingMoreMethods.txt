@@ -1,0 +1,39 @@
+Creating More Methods
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sayHiMethod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SayHi();
+            Console.WriteLine("Enter the first number to be added.");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number to be added.");
+            int num2 = int.Parse(Console.ReadLine());
+            
+            Add(num1, num2);
+        }
+
+        static void SayHi()
+        {
+            string x = "Hi!";
+            Console.WriteLine(x);
+        }
+
+
+        static void Add(int num1, int num2)
+        {
+           
+            int sum = num1 + num2;
+            Console.WriteLine("Your sum is " + sum + ".");
+            return;
+        }
+    }
+}

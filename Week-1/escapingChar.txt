@@ -1,0 +1,28 @@
+Escaping Characters and Finding Length of Char Array
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace escapingChar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*string mary = "Mary had a little lamb, it's fleece was white as snow.";
+            char[] array = mary.ToCharArray();
+            int arrayLength = array.Length;
+           
+            Console.WriteLine(arrayLength);*/
+
+
+            string mary = "Mary had a little lamb,\nit's fleece was \"white\" as snow.";
+            Console.WriteLine(mary);
+
+
+        }
+    }
+}

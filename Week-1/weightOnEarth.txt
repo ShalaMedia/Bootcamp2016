@@ -1,0 +1,24 @@
+Weight On Earth
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace weightOnEarth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Write a program to calculate the weight of a person on the moon if the moon's gravitational pull is 17% of Earth's
+
+            Console.WriteLine("Please enter your current weight.");
+            double earthWeight = double.Parse(Console.ReadLine());
+            double moonWeight = earthWeight * 0.17;
+            Console.WriteLine("If your weight on Earth is {0} lbs., Your weight on the Moon would be {1} lbs.", earthWeight, moonWeight);
+                
+         }
+    }
+}

@@ -1,0 +1,26 @@
+Replace Text In String
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace replaceTextInString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Replace text in string 
+            string myStr = "We Can Code IT";
+            string result =
+                    myStr.Replace("We", "I");
+            Console.WriteLine(result);
+            /*
+            This replaces *all* occurrences. If we had multiple “We” substrings, all of them would change to “I”
+            */
+
+        }
+    }
+}

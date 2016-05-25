@@ -1,0 +1,35 @@
+Conditional Practice 2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace conditionalPractice2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Write a program that asks a user his or her name. If the name begins with an “A” tell them to go to the front of the line.
+
+            Console.WriteLine("What is your name");
+            string userName = Console.ReadLine();
+            string upper = userName.ToUpper();
+            char[] a = upper.ToCharArray();
+            char first = a[0];
+
+            if(first == 'A')
+             
+            {
+                Console.WriteLine("Go to the front of the line!");
+            }
+            else
+            {
+                Console.WriteLine("Stay where you are!");
+            }
+
+        }
+    }
+}

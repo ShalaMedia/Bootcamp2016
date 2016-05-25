@@ -1,0 +1,55 @@
+Switch Case 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace switchCase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter your score. Your range should be between 1 and 9");
+            int score = int.Parse(Console.ReadLine());
+            int bonus10 = 10;
+            int bonus100 = 100;
+            int bonus1000 = 1000;
+            int bonus = 0;
+            string message = "";
+
+           switch(score)
+            {
+                case 1:
+                case 2:
+                case 3:
+                  bonus = score * bonus10;
+                  message = "Yay, you scored " + score + ". Your bonus is " + bonus + ". Your total is " + (score + bonus);
+                        break;
+
+              case 4:
+              case 5:
+              case 6:
+                bonus = score * bonus100;
+                message = "Yay, you scored " + score + ". Your bonus is " + bonus + ". Your total is " + (score + bonus);
+                    break;
+
+               case 7:
+               case 8:
+               case 9:
+                  bonus = score * bonus1000;
+                  message ="Yay, you scored " + score + ". Your bonus is " + bonus + ". Your total is " + (score + bonus);
+                    break;
+
+                default:
+                message = "ERROR!!!! You entered an incorrect value!";
+                    break;
+            }
+
+
+            Console.WriteLine(message);
+        }
+    }
+}

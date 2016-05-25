@@ -1,0 +1,34 @@
+Sum With While Loop Using Input
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace inputWithWhileLoop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ask a user a number to count from and to. Write a loop that counts every number & prints it starting 
+            //at the lower number and ending at the higher number. 
+
+            Console.WriteLine("Let's count! Choose a number for me to start counting from!");
+            int firstNum = int.Parse(Console.ReadLine());
+            Console.WriteLine("Now enter a number where you would like me to stop counting");
+            int secondNum = int.Parse(Console.ReadLine());
+
+            
+            int sum = 0;
+            int counter = firstNum;
+            while (counter <= secondNum)
+            {
+                sum += counter;
+                counter++;
+            }
+            Console.WriteLine(sum);
+        }
+    }
+}

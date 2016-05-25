@@ -1,0 +1,102 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace debLearning  //1. Just a name I created staing the purpose of the program
+{
+    class Program //2. The main class we will use, it is already set up. No need to change it. We will create our own later. Hop down to comment #3.
+    {
+        static void Main(string[] args) //The main argument, I leave this alone because it runs the show. 
+        {
+            /*24. ***THE PROGRAM*** Ask your questions, store their input in a variable, call "Class Deb", 
+            create a new instance of "Class Deb" and pass your arguments to it so we can use the method "All();"*/
+            Console.WriteLine("I see you are having some feelings, In one word, tell me how you are feeling?");
+            string userFeelings = Console.ReadLine();
+            Console.WriteLine("It's crazy being a student! What are you taking?");
+            string userSubject = Console.ReadLine();
+
+            //25. Here is the new "Class Deb" with a new object of "ourFeelings".
+            Deb ourFeelings = new Deb(userFeelings, userSubject); 
+            /*26. "ourFeelings" now has the value of both objects we instanciated in the "Class Deb" constructor that accepts
+            two strings*/
+            ourFeelings.All(); //27.  This will print the message we put in the method body "All();" in "Class Deb". Voila! 
+        }
+    }
+    class Deb  /*3. Now we are creating a ***CLASS*** called *Deb* beause my objects will be based on her feelings and the subject   
+                    she is taking in the current moment.*/
+    {
+        /*4. ***FIELDS***. This is where I declare what attributes/states about Deb I want to focus on in the program as stated above. 
+        Since my program is only based on her feelings and what subject she is taking, I will make these private so no one can
+        change my desired outcome for the program. I want to dabble in these states only, for now.*/
+
+        private string subject; //5. *Access Modifer* is "private". We are working with a "string" and the object I want to create is "subject".
+
+        private string feelings; //6. *Access Modifer* is "private". We are working with a "string" and the object I want to create is "feelings".
+
+        /*7. ***Properties*** This is the only way a programmer or a user can access our objects for class Deb. To me, it's like an editable copy of 
+                              an original PDF form or template. Or, even a basic permission slip that a teacher can re-use by adding or 
+                              changing information */
+
+        public string Subject  //8. The Property is "public" so people can work with the object without changing my intentions for the program.
+        {
+            get //9. Gets "subject" from the Field so we can use it. After asking Momma Bear first! 
+            {
+                return this.subject; //10. We ask to use "subject", and Momma returns it! 
+            }
+            set  //10. Sweet! We got the "subject" from the field, now we can add some value to it. 
+            {
+                this.subject = value; //11. Keyword value reminds me of null.
+            }
+        }
+        public string Feelings //12. Same thing with "Feelings", ask Momma! When she "returns" it, "set" it by givivng it some value. 
+                               // 13. I put my "{get; set;}" in the field most times, but I did it this way for learning syntax.
+        {
+            get
+            {
+                return this.feelings;
+            }
+            set
+            {
+                this.feelings = value;
+            }
+        }
+
+        /*14. ***Constructors*** I look at this like, "What user input or data (arguments) do I need to make these objects real 
+        in the program? What is "Class Deb" going to do when I call her? How will "Class Deb" know what you're feeling or what 
+        subject your studying so she can handle it? I know, we'll tell "Class Deb" that she needs some arguments with a data type of 
+        string for feelings, and another data type of string for the subject. This will assign whatever argument/variable 
+        that was passed to the new instance of "Class Deb" in the program, to the appropriate object (Initializing the objects). 
+        The first constructor is just a default.*/
+
+        public Deb()  //15. This one is default. It is, what it is. Just include it. 
+        {
+            //16. This body is empty, not sexy! Can't win 'em all lol!
+        }
+
+        public Deb(string feelings, string subject) //17. Now I want a *Constructor* that takes two strings so we can assign them to the objects.
+        {
+            this.feelings = feelings.ToLower();  //18. this.feelings(field feelings) = "string" feelings(string feelings from the constructor)...and I wanted it to print lowercase!
+            this.subject = subject.ToLower();    //19.  Same goes for subject!
+        }
+
+        /*20.  *** METHODS*** Now we can create a method with the data from our constructor to make things happen in the program.
+        I know that I want a method that prints your feelings and the subject your studying to the console efficiently*/
+
+        public void All() //21. Here, we will create a method called "All()". In this method body, we will tell "All()" what to do!
+        {
+            /*22. The method "All()" will print the string literal/argument, I passed into the "Console.WriteLine()" here in the method body, 
+            with the objects included. After "Class Deb" is called and the new objects are instanciated in your program, you just write...."theNewObject".All();
+            to print the statement below.*/
+            Console.WriteLine("\n\nMy friend Deb and I are enrolled in " + subject + " too! \nI've found that we both can feel really " + feelings + " also.\nWe can totally relate!");
+        }
+
+        /*23. Now we can go to back up to Main and create a program that asks the user how they feel and what subect they're studying.Then the program 
+        will print a message using the method "All()" from "Class Deb", which we just created.*/
+    }
+        
+             
+}
+    
+

@@ -1,0 +1,74 @@
+Project Day 1 Fortune Teller Program (Initial Input and Intitializing Variables)
+
+The last Console.WL() is commented out. I still need to enter Debs code to handle 
+the input before it will print the answers. I have a test C.WL() in place to check
+that the values being entered are correct and returning something. 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace fortuneTellerProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Develop a console application that will tell the user’s fortune based on data received from the user. The specifications are as follows:
+
+
+            Console.WriteLine("If you allow me the opportunity, I would like to tell you your future. \nEnter Y/N.");
+            string str = Console.ReadLine();
+            string yes = str.ToUpper();
+
+
+            while (yes == "Y")
+            {
+                Console.WriteLine("Enter your first name then press enter");
+                string ans = Console.ReadLine();
+                string firstName = ans.ToUpper();
+
+                Console.WriteLine("Enter your last name then press enter.");
+                string ans1 = Console.ReadLine();
+                string lastName = ans1.ToUpper();
+
+                Console.WriteLine("Enter your age then press enter.");
+                int age = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the month were you born ex. (January), then press enter.");
+                string ans3 = Console.ReadLine();
+                string month = ans3.ToUpper();
+
+                Console.WriteLine("Next, you will be prompted to enter your favorite color (ROYGBIV). \n\nIf you don't know what these colors are, \nenter: \"Help\" or press enter to continue .");
+                string ans4 = Console.ReadLine();
+                string colorUpper = ans4.ToUpper();
+
+                if (colorUpper == "HELP") //Can also use (colorUpper.Equals("HELP"))
+                {
+                    Console.WriteLine("\nYour color options are: red, orange, yellow, green, blue, indigo or violet.");
+                }
+                    
+                Console.WriteLine("\n\nEnter your color and press enter");
+                string color = Console.ReadLine();
+                Console.WriteLine("Your color " + color + " is valid!");
+
+                Console.WriteLine("Enter how many siblings do you have then press enter.");
+                int sib = int.Parse(Console.ReadLine());
+                Console.WriteLine(firstName + "," + lastName + "," + age + "," + month + "," + color + "," + sib);
+                //Console.WriteLine(firstName + " " + lastName + " will retire in [# of Years] with [Amount of Money] in the bank, a vacation home in [Location] and a [Mode of Transportation].");
+
+                Console.WriteLine("Would you like to try again? Y/N");
+                string yesNo1 = Console.ReadLine();
+                string again = yesNo1.ToUpper();
+                if (again != "Y")
+                {
+                    Console.WriteLine("Maybe next time!");
+                    break;
+                }
+                    
+            }
+        }
+    }
+}

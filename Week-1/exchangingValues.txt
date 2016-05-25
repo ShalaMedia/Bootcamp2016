@@ -1,0 +1,30 @@
+Exchanging Values
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exchangeValues
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 1;
+            int b = 2;
+            int s = 0;
+
+            if(a > b)
+            {
+                s = a;
+                a = b;
+                b = s;
+
+                Console.WriteLine("We have now switched the values of your numbers to a = " + b + " and b = " + a + " .");
+            }
+
+        }
+    }
+}
